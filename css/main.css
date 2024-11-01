@@ -1398,7 +1398,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #af2628;
+    background: #ff0ee9;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2962,4 +2962,30 @@ header.header {
   .sidebar {
     display: none;
   }
+}
+body {
+  background: url("../../../images/longzu.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.popup {
+  opacity: 0.8;
+}
+.content-wrap {
+  opacity: 0.8;
+}
+.main-inner {
+  opacity: 0.8;
+}
+.sidebar {
+  opacity: 0.8;
+}
+.header-inner {
+  background: rgba(255,255,255,0.8);
+  opacity: 0.8;
+}
+.popup {
+  opacity: 0.8;
 }
