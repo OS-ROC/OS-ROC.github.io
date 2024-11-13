@@ -1437,7 +1437,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #a2ffff;
+    background: #371bec;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1987,6 +1987,7 @@ pre code {
 .use-motion .pagination,
 .use-motion .comments {
   visibility: hidden;
+  margin-bottom: 40px;
 }
 .use-motion .post-header {
   visibility: hidden;
