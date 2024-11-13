@@ -1,5 +1,5 @@
 :root {
-  --body-bg-color: #eee;
+  --body-bg-color: transparent;
   --content-bg-color: #fff;
   --card-bg-color: #f5f5f5;
   --text-color: #555;
@@ -1263,6 +1263,7 @@ pre code {
   display: flex;
   flex-shrink: 0;
   padding: 0 10px;
+  border-radius: 18.8px 18.8px 0 0;
 }
 .use-motion .column,
 .use-motion .site-brand-container .toggle {
@@ -1436,7 +1437,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #d470ff;
+    background: #a2ffff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1819,7 +1820,7 @@ pre code {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: calc(100% - 2px);
+  width: calc(100% - 20px);
 }
 @media (max-width: 767px) {
   .footer-inner {
@@ -2712,7 +2713,7 @@ mark.search-keyword {
 }
 header.header {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 @media (max-width: 991px) {
@@ -2725,7 +2726,7 @@ header.header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: calc(100% - 2px);
+  width: calc(100% - 20px);
 }
 @media (max-width: 767px) {
   .main {
@@ -2749,7 +2750,7 @@ header.header {
   }
 }
 .main-inner {
-  border-radius: initial;
+  border-radius: 20px 20px 20px 20px;
   box-sizing: border-box;
   width: calc(100% - 252px);
 }
@@ -2778,7 +2779,8 @@ header.header {
   }
 }
 .site-brand-container {
-  background: var(--theme-color);
+  background: url("https://images.unsplash.com/photo-1668735648397-9defaa967b15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
 }
 @media (max-width: 991px) {
   .site-nav-on .site-brand-container {
@@ -2885,7 +2887,7 @@ header.header {
   }
   .sidebar-inner {
     background: var(--content-bg-color);
-    border-radius: initial;
+    border-radius: 20px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
     box-sizing: border-box;
     color: var(--text-color);
@@ -2935,7 +2937,7 @@ header.header {
     display: block;
   }
   .links-of-author-item a:hover {
-    background: var(--body-bg-color);
+    background: url("../../../longzu.png");
   }
   .back-to-top {
     background: var(--body-bg-color);
@@ -2953,11 +2955,11 @@ header.header {
 .main-inner .comment-position .comments,
 .main-inner .pagination {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 .main-inner .post-block:not(:first-child):not(:first-child) {
-  border-radius: initial;
+  border-radius: 20px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   margin-top: 12px;
 }
@@ -2975,7 +2977,7 @@ header.header {
 .main-inner > .comments,
 .main-inner .comment-position .comments,
 .main-inner .pagination {
-  border-radius: initial;
+  border-radius: 20px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   margin-top: 12px;
 }
@@ -2997,7 +2999,7 @@ header.header {
 }
 .post-block,
 .comments {
-  padding: 4px;
+  padding: 40px;
 }
 .post-eof {
   display: none;
@@ -3008,10 +3010,10 @@ header.header {
 }
 .post-body h1,
 .post-body h2 {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid transparent;
 }
 .post-body h3 {
-  border-bottom: 1px dotted #eee;
+  border-bottom: 1px dotted transparent;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner {
